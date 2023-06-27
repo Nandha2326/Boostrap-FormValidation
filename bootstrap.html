@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="icon" href="images/favicon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        body {
+            background:linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            background-size: cover;
+            font-family: 'Roboto Condensed', sans-serif !important;
+            height: 100vh;
+        }
+    </style>
+    <!-- <img src="/images/image.png" alt=""> -->
+    <div class="container m-6">
+        <h2 class="head text-center  fs-1 pt-2">Registration Form</h2><br>
+        <form class=" needs-validation  " novalidate>
+            <div class="row">
+                <div class="col pr-5 ">
+                    <div class="form-floating ">
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="name" required>
+                        <label for="validationCustom01" class="form-label">Name:</label>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Name!</div>
+                    </div><br>
+
+                    <div class="form-floating ">
+                        <input type="tel" pattern="[0-9]{10}" class="form-control" id="validationCustom02" required
+                            placeholder="name@example.com">
+                        <label for="validationCustom02 " class="form-label">Mobile Number</label>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Mobile Number!</div>
+                    </div><br>
+
+                    <div class="form-floating ">
+                        <input type="password" class="form-control" id="validationCustom03" placeholder="password"
+                            required>
+                        <label for="validationCustom03" class="form-label">password:</label>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Password!</div>
+                    </div><br>
+
+                    <div class=" ">
+                        Gender:<br>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male" class="form-label">Male</label>&nbsp;&nbsp;
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>&nbsp;&nbsp;
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        <label for="other">Other</label>&nbsp;&nbsp;
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Gender</div>
+                    </div><br>
+                    <div class=" ">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                        </select><br>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Country!</div>
+                    </div>
+
+
+                </div>
+                <div class="col">
+                    <div class="form-floating ">
+                        <input type="email" class="form-control" id="validationCustom05"
+                         placeholder="name@example.com"
+                            required>
+                        <label for="validationCustom05" class="form-label">Email address</label>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Password!</div>
+                    </div> <br>
+                    <div class="form-floating ">
+                        <input type="number" class="form-control" id="validationCustom06"
+                         placeholder="enter your age "
+                            required>
+                        <label for="validationCustom06" class="form-label"> Age</label>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Country!</div>
+                    </div><br>
+                    <div class="form-floating ">
+                        <input type="password" class="form-control" id="validationCustom07"
+                            placeholder="RE Enter-password" required>
+                        <label for="validationCustom07" class="form-label">RE Enter-password:</label>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Country!</div>
+                    </div><br>
+                    <div class="interest  ">
+                        Interests: <br>
+                        <input type="radio" id="music" name="interests" value="music" required>
+                        <label for="music" class="form-label ">Music</label> &nbsp;&nbsp;
+                        <input type="radio" id="sports" name="interests" value="sports" required>
+                        <label for="sports" class="form-label">Sports</label>&nbsp;&nbsp;
+                        <input type="radio" id="books" name="interests" value="books" required>
+                        <label for="books" class="form-label">Books</label>&nbsp;&nbsp;
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Country!</div>
+                    </div><br>
+                    <div class=" ">
+                        <label for="validationCustom08" class="form-label">Qualification:</label>
+                        <select id="validationCustom08" name="Qualification" required>
+                            <option value="">Select</option>
+                            <option value="Bsc">Bsc</option>
+                            <option value="BBA">B.E</option>
+                            <option value="Bcom">Msc</option>
+                        </select>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please Enter your Country!</div>
+                    </div>
+
+                </div>
+            </div><br>
+            <div class=" text-center ">&nbsp;
+                <input class="form-check-input " type="checkbox" required id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+               I Agree the terms and Conditon
+            </div>
+    </div>
+    <div class="Register  rounded text-center">
+        <button class="text-white bg-success border-0 p-2 px-3 mb-2">Register</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    <!-- js Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="boot.js">
+
+    </script>
+</body>
+
+</html>
